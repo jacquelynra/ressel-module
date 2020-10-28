@@ -13,8 +13,9 @@
 
 // Including stuff from ML
 
-#include <module.h>
 #include <menu.h>
+#include <module.h>
+#include <property.h>
 
 // Taken from movtweaks.c functions ChangeHDMIOutputSizeToVGA and ChangeHDMIOutputSizeToFULLHD [it may not work on all cameras!]
 
@@ -40,7 +41,7 @@ static struct menu_entry mem_rst_menu[] =
         .submenu_width = 710,
         .children =  (struct menu_entry[]) {
             {
-                .priv		= "Force 1080i",
+                .priv = "Force 1080i",
                 .display = menu_print,
                 .select = mem_rst_1080,
                 .help =  "This forces the camera to output FullHD-ish.",
