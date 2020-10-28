@@ -41,14 +41,14 @@ static struct menu_entry mem_rst_menu[] =
         .children =  (struct menu_entry[]) {
             {
                 .priv		= "Force 1080i",
-             		.display	= menu_print,
-            		.select		= mem_rst_1080,
-                .help  = "This forces the camera to output FullHD-ish.",
+                .display = menu_print,
+                .select = mem_rst_1080,
+                .help =  "This forces the camera to output FullHD-ish.",
             }
             {
-                .priv		= "Force 480p",
-                .display	= menu_print,
-                .select		= mem_rst_480,
+                .priv = "Force 480p",
+                .display  = menu_print,
+                .select = mem_rst_480,
                 .help  = "This forces the camera to output at 480p.",
                 .help2  = "... It's already on ML...",
             },
